@@ -14,7 +14,7 @@ struct Position
     Position(int r, int c): row(r), col(c) {}
 };
 
-void BFS(vector<vector<char>> caseMG, int width, int length, int row, int col) 
+void BFS(vector<vector<char>>& caseMG, int width, int length, int row, int col) 
 {
     Position start = Position(row, col);
     queue<Position> myQueue;
@@ -36,7 +36,7 @@ void BFS(vector<vector<char>> caseMG, int width, int length, int row, int col)
     }
 }
 
-int numsIslands(vector<vector<char>> caseMG)
+int numsIslands(vector<vector<char>>& caseMG)
 {
     int width = caseMG.size();
     int length = caseMG[0].size();
